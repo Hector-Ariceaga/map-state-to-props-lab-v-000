@@ -6,6 +6,7 @@ class Users extends Component {
   render() {
     return (
       <div>
+        <h3>Total Users: {this.props.userCount}</h3>
         <ul>
           {this.props.users.map(user => <li>{user.username}</li>)}
         </ul>
